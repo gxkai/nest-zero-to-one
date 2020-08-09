@@ -14,7 +14,7 @@ const sequelize = new Sequelize(db.mysql.database, db.mysql.user, db.mysql.passw
   host: db.mysql.host, // 数据库地址
 
   // 自定义端口; 默认值: 3306
-  port: db.mysql.port,
+  port: parseInt(db.mysql.port, 10),
 
   dialect: 'mysql',
 
